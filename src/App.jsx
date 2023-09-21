@@ -10,26 +10,41 @@ const pokemonList = [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
   },
   {
+    name: "charmander",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+  },
+  {
+    name: "squirtle",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+  },
+  {
+    name: "pikachu",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+  },
+  {
     name: "mew",
   },
 ];
-const pokemon = pokemonList[0];
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const [pokemonIndex, setPokemonIndex] = useState(0);
+  const pokemon = pokemonList[pokemonIndex];
+  const incrementIndex = () => {
+    setPokemonIndex(pokemonIndex + 1);
+  };
+  const decrementIndex = () => {
+    setPokemonIndex(pokemonIndex - 1);
+  };
   return (
     <>
       <div>
         <PokedexLogo />
-      </div>
-      <div>
-        <PokemonCard  {...pokemon} />
-      </div>
-      <div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <PokemonCard {...pokemon} />
+        <button onClick={decrementIndex}>Previous</button>
+        <button onClick={incrementIndex}>Next</button>
       </div>
     </>
   );

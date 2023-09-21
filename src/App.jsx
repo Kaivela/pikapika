@@ -32,22 +32,20 @@ const pokemonList = [
 function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
   const pokemon = pokemonList[pokemonIndex];
-  const incrementIndex = () => {
-    setPokemonIndex(pokemonIndex + 1);
-  };
-  const decrementIndex = () => {
-    setPokemonIndex(pokemonIndex - 1);
-  };
+  const incrementIndex = () => {setPokemonIndex(pokemonIndex + 1);};
+  const decrementIndex = () => {setPokemonIndex(pokemonIndex - 1);};
   return (
     <>
       <div>
         <PokedexLogo />
         <PokemonCard {...pokemon} />
-        <button onClick={decrementIndex}>Previous</button>
-        <button onClick={incrementIndex}>Next</button>
+        {pokemonIndex > 0 && <button onClick={decrementIndex}>Previous</button>}
+        {pokemonIndex < 4 && <button onClick={incrementIndex}>Next</button>}
       </div>
     </>
   );
 }
+
+
 
 export default App;

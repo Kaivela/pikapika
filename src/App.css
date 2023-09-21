@@ -7,35 +7,31 @@
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 20px yellow);
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #fffb06aa);
+
+.card:hover {
+  filter: drop-shadow(0 0 20px #01aaffaa);
+  will-change: filter;
+  transition: filter 300ms;
 }
 
-.card {
-  width: 200px;
-  padding: 1rem;
-  background-image: radial-gradient(circle, rgb(159, 0, 207), green);
-  border-radius: 5px;
-  color: white;
-  font-size: 22px;
-  text-align: center;
-  text-shadow: 0px 0px 5px white;
+button:hover {
+  filter: drop-shadow(0 0 20px #ffffff);
+  will-change: filter;
+  transition: filter 300ms;
 }
 
 .img {
-  width: 100%;
-  height: auto;
-  border-width: 5px;
-  border-style: solid;
-  border-color: red black white;
-  border-radius: 80px;
-  background-color: black;
+  width: 50%;
 }
 
 .name {
-  color: black
+  color: white;
+  font-size: 22px;
+  text-shadow: white;
 }

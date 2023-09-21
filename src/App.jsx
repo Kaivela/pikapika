@@ -1,11 +1,12 @@
 import { useState } from "react";
 import PokedexLogo from "./components/PokedexLogo";
 import PokemonCard from "./components/PokemonCard";
+import NavBar from "./components/NavBar";
 import "./App.css";
 
 const pokemonList = [
   {
-    name: "bulbasaur", 
+    name: "bulbasaur",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
   },
@@ -32,20 +33,15 @@ const pokemonList = [
 function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
   const pokemon = pokemonList[pokemonIndex];
-  const incrementIndex = () => {setPokemonIndex(pokemonIndex + 1);};
-  const decrementIndex = () => {setPokemonIndex(pokemonIndex - 1);};
   return (
     <>
       <div>
         <PokedexLogo />
         <PokemonCard {...pokemon} />
-        {pokemonIndex > 0 && <button onClick={decrementIndex}>Previous</button>}
-        {pokemonIndex < 4 && <button onClick={incrementIndex}>Next</button>}
+        <NavBar pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} />
       </div>
     </>
   );
 }
-
-
 
 export default App;

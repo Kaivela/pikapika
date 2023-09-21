@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 
 PokemonCard.propTypes = {
-    name: PropTypes.string.isRequired,
-    imgSrc: PropTypes.string,
-  }
+  name: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string,
+};
 
-function PokemonCard({name, imgSrc}) {
+function PokemonCard({ name, imgSrc }) {
   return (
     <figure className="card">
       {imgSrc ? <img className="img" src={imgSrc} alt={name} /> : <p>???</p>}

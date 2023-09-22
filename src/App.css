@@ -15,13 +15,13 @@
 }
 
 .card:hover {
-  filter: drop-shadow(0 0 20px #01aaffaa);
+  filter: drop-shadow(0 0 20px grey);
   will-change: filter;
   transition: filter 300ms;
 }
 
 button:hover {
-  filter: drop-shadow(0 0 20px #ffffff);
+  filter: drop-shadow(0 0 20px white);
   will-change: filter;
   transition: filter 300ms;
 }
@@ -34,4 +34,58 @@ button:hover {
   color: white;
   font-size: 22px;
   text-shadow: white;
+}
+
+.green {
+  text-align: center;
+}
+.green:hover {
+  filter: drop-shadow(0 0 20px rgb(95, 216, 145));
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.red {
+  text-align: center;
+}
+.red:hover {
+  filter: drop-shadow(0 0 20px rgb(255, 102, 0));
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.blue {
+  text-align: center;
+}
+.blue:hover {
+  filter: drop-shadow(0 0 20px rgba(81, 210, 253, 0.863));
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.yellow {
+  text-align: center;
+}
+.yellow:hover {
+  filter: drop-shadow(0 0 20px rgb(255, 217, 0));
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.rose {
+  text-align: center;
+}
+.rose:hover {
+  filter: drop-shadow(0 0 20px rgb(248, 164, 241));
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.violet {
+  text-align: center;
+}
+.violet:hover {
+  filter: drop-shadow(0 0 20px rgb(121, 57, 180));
+  will-change: filter;
+  transition: filter 300ms;
 }

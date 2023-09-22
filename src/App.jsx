@@ -6,27 +6,43 @@ import "./App.css";
 
 const pokemonList = [
   {
-    name: "bulbasaur",
+    name: "Bulbasaur",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-  },
+    color: "green"
+    },
   {
-    name: "charmander",
+    name: "Charmander",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+    color: "red"
   },
   {
-    name: "squirtle",
+    name: "Squirtle",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+    color: "blue"
   },
   {
-    name: "pikachu",
+    name: "Pikachu",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+    color: "yellow"
   },
   {
-    name: "mew",
+    name: "Mewtwo",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+    color: "violet"
+  },
+  {
+    name: "Mew",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+    color: "rose"
+  },
+  {
+    name: "WildCodeSchool"
   },
 ];
 

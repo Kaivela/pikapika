@@ -9,40 +9,40 @@ const pokemonList = [
     name: "Bulbasaur",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-    color: "green"
-    },
+    color: "rgb(95, 216, 145)",
+  },
   {
     name: "Charmander",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
-    color: "red"
+    color: "rgb(255, 102, 0)",
   },
   {
     name: "Squirtle",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
-    color: "blue"
+    color: "rgba(81, 210, 253, 0.863)",
   },
   {
     name: "Pikachu",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
-    color: "yellow"
+    color: "rgb(255, 217, 0)",
   },
   {
     name: "Mewtwo",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
-    color: "violet"
+    color: "rgb(121, 57, 180)",
   },
   {
     name: "Mew",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
-    color: "rose"
+    color: "rgb(248, 164, 241)",
   },
   {
-    name: "WildCodeSchool"
+    name: "WildCodeSchool",
   },
 ];
 
